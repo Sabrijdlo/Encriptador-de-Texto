@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/pngtree-lock-icon-protection-padlock-safety-picture-image_8026948.ico">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>    
+        <img class="logoAlura" src="img/Logo.png" alt="Logo de Alura">
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <section class="izq">
+                <textarea class="textareaUsuario" cols="30" rows="10" placeholder="Ingrese su texto aqui"></textarea>
+                
+                <div class="abajo" >
+                    <div class="informacion">
+                        <img class="informacionImg" src="img/Group.png" alt=""><h6 class="informacionTexto">Solo letras minúsculas y sin acentos</h6>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn blue" onclick="encriptar()" >Encriptar</button>
+                        <button class="btn grey greyDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="der">       
+                <textarea class="textareaMensaje"></textarea>
+                
+                <div class="textosybtn">
+                    <div class="textoImg">
+                        <div class="imagenInspector">
+                        <img src="img/inspector.png" alt="">
+                        </div>
+                        <h3 class="textoArriba">Ningún mensaje fue encontrado</h3>
+                        <p class="textoAbajo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="botonCopiar">
+                        <button class="btn grey copiarTexto hidden">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
